@@ -1,0 +1,5 @@
+.build/
+.tests/
+.vs/
+*.aps
+*.vcxproj.user

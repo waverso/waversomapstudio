@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="actors" />
+    <Filter Include="editor" />
+    <Filter Include="catalog" />
+    <Filter Include="hooks" />
+    <Filter Include="layout" />
+    <Filter Include="objects" />
+    <Filter Include="pickups" />
+    <Filter Include="project" />
+    <Filter Include="races" />
+    <Filter Include="rendering" />
+    <Filter Include="resources" />
+    <Filter Include="scene" />
+    <Filter Include="shared" />
+    <Filter Include="textures" />
+    <Filter Include="ui" />
+    <Filter Include="utils" />
+    <Filter Include="vehicles" />
+    <Filter Include="vendor" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="source\vendor\detours\detours.lib">
+      <Filter>vendor</Filter>
+    </Library>
+    <ClCompile Include="source\scene\actions.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\actions_history.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\property_edit.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\project\project_document.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="source\project\project_document_validation.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="source\project\projects.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="source\editor\user_data.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\editor\user_storage.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\project\pawn_import.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="source\project\pawn_export.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\collision_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\catalog\database.cpp">
+      <Filter>catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\gizmos.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\game_hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ui\gui.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\editor\studio_info.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ui\imgui_custom.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\free_camera.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\free_camera_input.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\free_camera_world.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\game_patches.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\outline_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\outline_renderer_resources.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\samp.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\samp_version.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\samp_overlay.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\pickups\pickup_runtime.cpp">
+      <Filter>pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ui\icons.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\image_atlas.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ui\font_preview_atlas.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objects\object_runtime.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objects\object_runtime_material_text.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\material_text_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vehicles\vehicle_runtime.cpp">
+      <Filter>vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vehicles\vehicle_browser.cpp">
+      <Filter>vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="source\actors\actor_runtime.cpp">
+      <Filter>actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\actors\skin_browser.cpp">
+      <Filter>actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objects\model_constraints.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objects\object_browser.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\model_preview.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rendering\model_thumbnails.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\textures\texture_browser.cpp">
+      <Filter>textures</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\picker.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\objects\removal_manager.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\box_area.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene_components.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene_hierarchy.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene_selection.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene_transforms.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\scene_tools.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\layout\layout.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source\layout\curves.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source\layout\curve_editor.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source\races\races.cpp">
+      <Filter>races</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\selection.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hooks\game_clock_controller.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\rendering\d3d9_procedural_mesh.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="source\utils\d3dx_math_compat.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui_draw.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui_impl_dx9.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui_impl_win32.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui_tables.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vendor\imgui\imgui_widgets.cpp">
+      <Filter>vendor</Filter>
+    </ClCompile>
+    <ClInclude Include="source\scene\actions.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\box_area.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\collision_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\catalog\database.h">
+      <Filter>catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\entity_runtime.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\entity_raycast.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\entity_ref.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\free_camera.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hooks\game_patches.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\gizmos.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\gui.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\gui_api.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\editor\studio_info.h">
+      <Filter>editor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\theme.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\theme_catalog.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hooks\game_hooks.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\icons.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\editor_shaders.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\image_atlas.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\font_preview_atlas.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\imgui_custom.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\catalog\interiors.h">
+      <Filter>catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\line_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\material_text_cache.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\material_text_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\objects\model_constraints.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\objects\object_browser.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\model_preview.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\model_thumbnails.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\catalog\browser_filter.h">
+      <Filter>catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="source\objects\object_runtime.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\outline_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\list_clipper.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\outliner_rows.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\project\pawn_export.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="source\project\pawn_import.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\picker.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\pickups\pickup_runtime.h">
+      <Filter>pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="source\pickups\pickup_position.h">
+      <Filter>pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\streaming_budget.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\project\projects.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="source\editor\user_data.h">
+      <Filter>editor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\editor\user_storage.h">
+      <Filter>editor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\project\project_document.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="source\project\project_filename.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="source\objects\removal_manager.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hooks\samp.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene_data.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene_limits.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene_storage.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\selection.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\textures\texture_browser.h">
+      <Filter>textures</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hooks\game_clock_controller.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ui\ui_scale.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vehicles\vehicle_browser.h">
+      <Filter>vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vehicles\vehicle_runtime.h">
+      <Filter>vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="source\catalog\zones.h">
+      <Filter>catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="source\actors\actor_runtime.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\particle_render_filter.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene_tools.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\property_edit.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\scene_input.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\layout\layout.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source\layout\curves.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source\layout\curve_geometry.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source\races\races.h">
+      <Filter>races</Filter>
+    </ClInclude>
+    <ClInclude Include="source\races\race_simulation.h">
+      <Filter>races</Filter>
+    </ClInclude>
+    <ClInclude Include="source\races\race_visual_motion.h">
+      <Filter>races</Filter>
+    </ClInclude>
+    <ClInclude Include="source\races\race_geometry.h">
+      <Filter>races</Filter>
+    </ClInclude>
+    <ClInclude Include="source\actors\skin_browser.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\actors\animation_browser.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\animation_catalog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\dff_effects.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\file_formats.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\model_checks.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\model_effects.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\private_render_cache.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\private_render_state.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\skin_catalog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\skin_instance.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\vehicle_catalog.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\vehicle_instance.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\atomic_file.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shared\crc32.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\text_search.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rendering\d3d9_procedural_mesh.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\d3dx_math_compat.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\transform_math.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\detours\detours.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imconfig.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imgui.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imgui_impl_dx9.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imgui_impl_win32.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imgui_internal.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imstb_rectpack.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imstb_textedit.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vendor\imgui\imstb_truetype.h">
+      <Filter>vendor</Filter>
+    </ClInclude>
+    <ResourceCompile Include="resources\resources.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+    <None Include="source\rendering\outline_renderer_helpers.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="source\objects\object_runtime_textures.inl">
+      <Filter>objects</Filter>
+    </None>
+    <None Include="source\objects\object_runtime_streaming.inl">
+      <Filter>objects</Filter>
+    </None>
+    <None Include="source\objects\object_runtime_transforms.inl">
+      <Filter>objects</Filter>
+    </None>
+    <None Include="source\scene\free_camera_projection.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\project\projects_storage.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\projects_pawn.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\project_document_binary.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\project_document_item_writer.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\project_document_item_reader.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\pawn_import_lexer.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\pawn_import_expressions.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\pawn_import_syntax.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\pawn_import_entities.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\project\pawn_import_materials.inl">
+      <Filter>project</Filter>
+    </None>
+    <None Include="source\layout\layout_geometry.inl">
+      <Filter>layout</Filter>
+    </None>
+    <None Include="source\layout\layout_actions.inl">
+      <Filter>layout</Filter>
+    </None>
+    <None Include="source\layout\layout_auto_apply.inl">
+      <Filter>layout</Filter>
+    </None>
+    <None Include="source\races\races_markers.inl">
+      <Filter>races</Filter>
+    </None>
+    <None Include="source\races\races_render.inl">
+      <Filter>races</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_player_visibility.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_entities.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_world.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_render_lists.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_render.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\hooks\game_hooks_input.inl">
+      <Filter>hooks</Filter>
+    </None>
+    <None Include="source\scene\selection_bounds.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\selection_gizmos.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\selection_commands.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\gizmos_geometry.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\gizmos_input.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\gizmos_render.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\gizmos_indicator.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\scene\gizmos_bounds.inl">
+      <Filter>scene</Filter>
+    </None>
+    <None Include="source\ui\gui_animation_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_cursor.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_fonts.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_style.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_user_data.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_browser_catalog.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_browser_paging.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_browser_state.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_color_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_component_cards.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_filter_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_help.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_input_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_properties.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_properties_state.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_layout_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_list_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_modal_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_model_preview.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\rendering\model_preview_camera.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="source\rendering\model_preview_effects.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="source\rendering\model_preview_instance.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="source\rendering\model_preview_render.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="source\textures\texture_browser_cache.inl">
+      <Filter>textures</Filter>
+    </None>
+    <None Include="source\textures\texture_browser_filter.inl">
+      <Filter>textures</Filter>
+    </None>
+    <None Include="source\ui\gui_object_filters.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_object_details.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_object_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_outliner.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_outliner_state.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_project_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_project_state.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_project_commands.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_toolbar.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_project_modals.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_quick_add.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_scene_edit.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_scene_menus.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_search_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_section_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_sidebar.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_skin_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_texture_filters.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_texture_details.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_texture_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_themes.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_vector_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_vehicle_browser.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_view.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_view_bookmarks.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_view_teleport.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_viewport.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_viewport_state.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\gui_viewport_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_components.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_layout.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_menus.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_pickers.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_session.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\ui\property_inspector_widgets.inl">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="source\rendering\editor.hlsl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="resources\catalog.bin">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\icon_atlas.bin">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\font_preview_atlas.bin">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\waversomapstudio_races.inc">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

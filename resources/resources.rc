@@ -1,0 +1,6 @@
+#include "resource.h"
+
+IDR_EDITOR_DATABASE RCDATA "catalog.bin"
+IDR_RACE_INCLUDE RCDATA "waversomapstudio_races.inc"
+IDR_EDITOR_ATLAS RCDATA "icon_atlas.bin"
+IDR_FONT_LIST_ATLAS RCDATA "font_preview_atlas.bin"

@@ -1,0 +1,6 @@
+#pragma once
+
+#define IDR_EDITOR_DATABASE 101
+#define IDR_RACE_INCLUDE 102
+#define IDR_EDITOR_ATLAS 103
+#define IDR_FONT_LIST_ATLAS 104

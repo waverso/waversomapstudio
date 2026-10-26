@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release GTA-SA|Win32">
+      <Configuration>Release GTA-SA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug GTA-SA|Win32">
+      <Configuration>Debug GTA-SA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="source\vendor\detours\detours.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\scene\actions.cpp" />
+    <ClCompile Include="source\scene\actions_history.cpp" />
+    <ClCompile Include="source\scene\box_area.cpp" />
+    <ClCompile Include="source\scene\property_edit.cpp" />
+    <ClCompile Include="source\project\project_document.cpp" />
+    <ClCompile Include="source\project\project_document_validation.cpp" />
+    <ClCompile Include="source\project\projects.cpp" />
+    <ClCompile Include="source\editor\user_data.cpp" />
+    <ClCompile Include="source\editor\user_storage.cpp" />
+    <ClCompile Include="source\project\pawn_import.cpp" />
+    <ClCompile Include="source\project\pawn_export.cpp" />
+    <ClCompile Include="source\rendering\collision_renderer.cpp" />
+    <ClCompile Include="source\catalog\database.cpp" />
+    <ClCompile Include="source\scene\gizmos.cpp" />
+    <ClCompile Include="source\hooks\game_hooks.cpp" />
+    <ClCompile Include="source\ui\gui.cpp" />
+    <ClCompile Include="source\editor\studio_info.cpp">
+      <PreprocessorDefinitions>STUDIO_COMPILE_UTC=R"($([System.DateTime]::UtcNow.ToString('yyyy-MM-dd HH:mm:ss')))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\ui\imgui_custom.cpp" />
+    <ClCompile Include="source\scene\free_camera.cpp" />
+    <ClCompile Include="source\scene\free_camera_input.cpp" />
+    <ClCompile Include="source\scene\free_camera_world.cpp" />
+    <ClCompile Include="source\hooks\game_patches.cpp" />
+    <ClCompile Include="source\rendering\outline_renderer.cpp" />
+    <ClCompile Include="source\rendering\outline_renderer_resources.cpp" />
+    <ClCompile Include="source\hooks\samp.cpp" />
+    <ClCompile Include="source\hooks\samp_version.cpp" />
+    <ClCompile Include="source\hooks\samp_overlay.cpp" />
+    <ClCompile Include="source\pickups\pickup_runtime.cpp" />
+    <ClCompile Include="source\ui\icons.cpp" />
+    <ClCompile Include="source\rendering\image_atlas.cpp" />
+    <ClCompile Include="source\ui\font_preview_atlas.cpp" />
+    <ClCompile Include="source\objects\object_runtime.cpp" />
+    <ClCompile Include="source\objects\object_runtime_material_text.cpp" />
+    <ClCompile Include="source\rendering\material_text_renderer.cpp" />
+    <ClCompile Include="source\vehicles\vehicle_runtime.cpp" />
+    <ClCompile Include="source\vehicles\vehicle_browser.cpp" />
+    <ClCompile Include="source\actors\actor_runtime.cpp" />
+    <ClCompile Include="source\actors\skin_browser.cpp" />
+    <ClCompile Include="source\objects\model_constraints.cpp" />
+    <ClCompile Include="source\objects\object_browser.cpp" />
+    <ClCompile Include="source\rendering\model_preview.cpp" />
+    <ClCompile Include="source\rendering\model_thumbnails.cpp" />
+    <ClCompile Include="source\textures\texture_browser.cpp" />
+    <ClCompile Include="source\scene\picker.cpp" />
+    <ClCompile Include="source\objects\removal_manager.cpp" />
+    <ClCompile Include="source\scene\scene.cpp" />
+    <ClCompile Include="source\scene\scene_components.cpp" />
+    <ClCompile Include="source\scene\scene_hierarchy.cpp" />
+    <ClCompile Include="source\scene\scene_selection.cpp" />
+    <ClCompile Include="source\scene\scene_transforms.cpp" />
+    <ClCompile Include="source\scene\scene_tools.cpp" />
+    <ClCompile Include="source\layout\layout.cpp" />
+    <ClCompile Include="source\layout\curves.cpp" />
+    <ClCompile Include="source\layout\curve_editor.cpp" />
+    <ClCompile Include="source\races\races.cpp" />
+    <ClCompile Include="source\scene\selection.cpp" />
+    <ClCompile Include="source\hooks\game_clock_controller.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\rendering\d3d9_procedural_mesh.cpp" />
+    <ClCompile Include="source\utils\d3dx_math_compat.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="source\vendor\imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\scene\actions.h" />
+    <ClInclude Include="source\scene\box_area.h" />
+    <ClInclude Include="source\rendering\collision_renderer.h" />
+    <ClInclude Include="source\catalog\database.h" />
+    <ClInclude Include="source\scene\entity_runtime.h" />
+    <ClInclude Include="source\scene\entity_raycast.h" />
+    <ClInclude Include="source\scene\entity_ref.h" />
+    <ClInclude Include="source\scene\free_camera.h" />
+    <ClInclude Include="source\hooks\game_patches.h" />
+    <ClInclude Include="source\scene\gizmos.h" />
+    <ClInclude Include="source\ui\gui.h" />
+    <ClInclude Include="source\ui\gui_api.h" />
+    <ClInclude Include="source\editor\studio_info.h" />
+    <ClInclude Include="source\ui\theme.h" />
+    <ClInclude Include="source\ui\theme_catalog.h" />
+    <ClInclude Include="source\hooks\game_hooks.h" />
+    <ClInclude Include="source\ui\icons.h" />
+    <ClInclude Include="source\rendering\editor_shaders.h" />
+    <ClInclude Include="source\rendering\image_atlas.h" />
+    <ClInclude Include="source\ui\font_preview_atlas.h" />
+    <ClInclude Include="source\ui\imgui_custom.h" />
+    <ClInclude Include="source\catalog\interiors.h" />
+    <ClInclude Include="source\rendering\line_renderer.h" />
+    <ClInclude Include="source\rendering\material_text_cache.h" />
+    <ClInclude Include="source\rendering\material_text_renderer.h" />
+    <ClInclude Include="source\objects\model_constraints.h" />
+    <ClInclude Include="source\objects\object_browser.h" />
+    <ClInclude Include="source\rendering\model_preview.h" />
+    <ClInclude Include="source\rendering\model_thumbnails.h" />
+    <ClInclude Include="source\catalog\browser_filter.h" />
+    <ClInclude Include="source\objects\object_runtime.h" />
+    <ClInclude Include="source\rendering\outline_renderer.h" />
+    <ClInclude Include="source\ui\list_clipper.h" />
+    <ClInclude Include="source\ui\outliner_rows.h" />
+    <ClInclude Include="source\project\pawn_export.h" />
+    <ClInclude Include="source\project\pawn_import.h" />
+    <ClInclude Include="source\scene\picker.h" />
+    <ClInclude Include="source\pickups\pickup_runtime.h" />
+    <ClInclude Include="source\pickups\pickup_position.h" />
+    <ClInclude Include="source\scene\streaming_budget.h" />
+    <ClInclude Include="source\project\projects.h" />
+    <ClInclude Include="source\editor\user_data.h" />
+    <ClInclude Include="source\editor\user_storage.h" />
+    <ClInclude Include="source\project\project_document.h" />
+    <ClInclude Include="source\project\project_filename.h" />
+    <ClInclude Include="source\objects\removal_manager.h" />
+    <ClInclude Include="source\hooks\samp.h" />
+    <ClInclude Include="source\scene\scene.h" />
+    <ClInclude Include="source\scene\scene_data.h" />
+    <ClInclude Include="source\scene\scene_limits.h" />
+    <ClInclude Include="source\scene\scene_storage.h" />
+    <ClInclude Include="source\scene\selection.h" />
+    <ClInclude Include="source\textures\texture_browser.h" />
+    <ClInclude Include="source\hooks\game_clock_controller.h" />
+    <ClInclude Include="source\ui\ui_scale.h" />
+    <ClInclude Include="source\vehicles\vehicle_browser.h" />
+    <ClInclude Include="source\vehicles\vehicle_runtime.h" />
+    <ClInclude Include="source\catalog\zones.h" />
+    <ClInclude Include="resources\resource.h" />
+    <ClInclude Include="source\actors\actor_runtime.h" />
+    <ClInclude Include="source\rendering\particle_render_filter.h" />
+    <ClInclude Include="source\scene\scene_tools.h" />
+    <ClInclude Include="source\scene\property_edit.h" />
+    <ClInclude Include="source\scene\scene_input.h" />
+    <ClInclude Include="source\layout\layout.h" />
+    <ClInclude Include="source\layout\curves.h" />
+    <ClInclude Include="source\layout\curve_geometry.h" />
+    <ClInclude Include="source\races\races.h" />
+    <ClInclude Include="source\races\race_simulation.h" />
+    <ClInclude Include="source\races\race_visual_motion.h" />
+    <ClInclude Include="source\races\race_geometry.h" />
+    <ClInclude Include="source\actors\skin_browser.h" />
+    <ClInclude Include="source\actors\animation_browser.h" />
+    <ClInclude Include="source\shared\animation_catalog.h" />
+    <ClInclude Include="source\shared\dff_effects.h" />
+    <ClInclude Include="source\shared\file_formats.h" />
+    <ClInclude Include="source\shared\model_checks.h" />
+    <ClInclude Include="source\shared\model_effects.h" />
+    <ClInclude Include="source\shared\private_render_cache.h" />
+    <ClInclude Include="source\shared\private_render_state.h" />
+    <ClInclude Include="source\shared\skin_catalog.h" />
+    <ClInclude Include="source\shared\skin_instance.h" />
+    <ClInclude Include="source\shared\vehicle_catalog.h" />
+    <ClInclude Include="source\shared\vehicle_instance.h" />
+    <ClInclude Include="source\utils\atomic_file.h" />
+    <ClInclude Include="source\shared\crc32.h" />
+    <ClInclude Include="source\utils\text_search.h" />
+    <ClInclude Include="source\rendering\d3d9_procedural_mesh.h" />
+    <ClInclude Include="source\utils\d3dx_math_compat.h" />
+    <ClInclude Include="source\utils\transform_math.h" />
+    <ClInclude Include="source\utils\utils.h" />
+    <ClInclude Include="source\vendor\detours\detours.h" />
+    <ClInclude Include="source\vendor\imgui\imconfig.h" />
+    <ClInclude Include="source\vendor\imgui\imgui.h" />
+    <ClInclude Include="source\vendor\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="source\vendor\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="source\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="source\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="source\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="source\vendor\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\resources.rc" />
+    <None Include="source\rendering\outline_renderer_helpers.inl" />
+    <None Include="source\objects\object_runtime_textures.inl" />
+    <None Include="source\objects\object_runtime_streaming.inl" />
+    <None Include="source\objects\object_runtime_transforms.inl" />
+    <None Include="source\scene\free_camera_projection.inl" />
+    <None Include="source\project\projects_storage.inl" />
+    <None Include="source\project\projects_pawn.inl" />
+    <None Include="source\project\project_document_binary.inl" />
+    <None Include="source\project\project_document_item_writer.inl" />
+    <None Include="source\project\project_document_item_reader.inl" />
+    <None Include="source\project\pawn_import_lexer.inl" />
+    <None Include="source\project\pawn_import_expressions.inl" />
+    <None Include="source\project\pawn_import_syntax.inl" />
+    <None Include="source\project\pawn_import_entities.inl" />
+    <None Include="source\project\pawn_import_materials.inl" />
+    <None Include="source\layout\layout_geometry.inl" />
+    <None Include="source\layout\layout_actions.inl" />
+    <None Include="source\layout\layout_auto_apply.inl" />
+    <None Include="source\races\races_markers.inl" />
+    <None Include="source\races\races_render.inl" />
+    <None Include="source\hooks\game_hooks_player_visibility.inl" />
+    <None Include="source\hooks\game_hooks_entities.inl" />
+    <None Include="source\hooks\game_hooks_world.inl" />
+    <None Include="source\hooks\game_hooks_render_lists.inl" />
+    <None Include="source\hooks\game_hooks_render.inl" />
+    <None Include="source\hooks\game_hooks_input.inl" />
+    <None Include="source\scene\selection_bounds.inl" />
+    <None Include="source\scene\selection_gizmos.inl" />
+    <None Include="source\scene\selection_commands.inl" />
+    <None Include="source\scene\gizmos_geometry.inl" />
+    <None Include="source\scene\gizmos_input.inl" />
+    <None Include="source\scene\gizmos_render.inl" />
+    <None Include="source\scene\gizmos_indicator.inl" />
+    <None Include="source\scene\gizmos_bounds.inl" />
+    <None Include="source\ui\gui_animation_browser.inl" />
+    <None Include="source\ui\gui_cursor.inl" />
+    <None Include="source\ui\gui_fonts.inl" />
+    <None Include="source\ui\gui_style.inl" />
+    <None Include="source\ui\gui_user_data.inl" />
+    <None Include="source\ui\gui_browser_catalog.inl" />
+    <None Include="source\ui\gui_browser_paging.inl" />
+    <None Include="source\ui\gui_browser_state.inl" />
+    <None Include="source\ui\gui_color_widgets.inl" />
+    <None Include="source\ui\gui_component_cards.inl" />
+    <None Include="source\ui\gui_filter_widgets.inl" />
+    <None Include="source\ui\gui_help.inl" />
+    <None Include="source\ui\gui_input_widgets.inl" />
+    <None Include="source\ui\gui_properties.inl" />
+    <None Include="source\ui\gui_properties_state.inl" />
+    <None Include="source\ui\gui_layout_widgets.inl" />
+    <None Include="source\ui\gui_list_widgets.inl" />
+    <None Include="source\ui\gui_modal_widgets.inl" />
+    <None Include="source\ui\gui_model_preview.inl" />
+    <None Include="source\rendering\model_preview_camera.inl" />
+    <None Include="source\rendering\model_preview_effects.inl" />
+    <None Include="source\rendering\model_preview_instance.inl" />
+    <None Include="source\rendering\model_preview_render.inl" />
+    <None Include="source\textures\texture_browser_cache.inl" />
+    <None Include="source\textures\texture_browser_filter.inl" />
+    <None Include="source\ui\gui_object_filters.inl" />
+    <None Include="source\ui\gui_object_details.inl" />
+    <None Include="source\ui\gui_object_browser.inl" />
+    <None Include="source\ui\gui_outliner.inl" />
+    <None Include="source\ui\gui_outliner_state.inl" />
+    <None Include="source\ui\gui_project_browser.inl" />
+    <None Include="source\ui\gui_project_state.inl" />
+    <None Include="source\ui\gui_project_commands.inl" />
+    <None Include="source\ui\gui_toolbar.inl" />
+    <None Include="source\ui\gui_project_modals.inl" />
+    <None Include="source\ui\gui_quick_add.inl" />
+    <None Include="source\ui\gui_scene_edit.inl" />
+    <None Include="source\ui\gui_scene_menus.inl" />
+    <None Include="source\ui\gui_search_widgets.inl" />
+    <None Include="source\ui\gui_section_widgets.inl" />
+    <None Include="source\ui\gui_sidebar.inl" />
+    <None Include="source\ui\gui_skin_browser.inl" />
+    <None Include="source\ui\gui_texture_filters.inl" />
+    <None Include="source\ui\gui_texture_details.inl" />
+    <None Include="source\ui\gui_texture_browser.inl" />
+    <None Include="source\ui\gui_themes.inl" />
+    <None Include="source\ui\gui_vector_widgets.inl" />
+    <None Include="source\ui\gui_vehicle_browser.inl" />
+    <None Include="source\ui\gui_view.inl" />
+    <None Include="source\ui\gui_view_bookmarks.inl" />
+    <None Include="source\ui\gui_view_teleport.inl" />
+    <None Include="source\ui\gui_viewport.inl" />
+    <None Include="source\ui\gui_viewport_state.inl" />
+    <None Include="source\ui\gui_viewport_widgets.inl" />
+    <None Include="source\ui\property_inspector.inl" />
+    <None Include="source\ui\property_inspector_components.inl" />
+    <None Include="source\ui\property_inspector_layout.inl" />
+    <None Include="source\ui\property_inspector_menus.inl" />
+    <None Include="source\ui\property_inspector_pickers.inl" />
+    <None Include="source\ui\property_inspector_session.inl" />
+    <None Include="source\ui\property_inspector_widgets.inl" />
+    <None Include="source\rendering\editor.hlsl" />
+    <None Include="resources\catalog.bin" />
+    <None Include="resources\icon_atlas.bin" />
+    <None Include="resources\font_preview_atlas.bin" />
+    <None Include="resources\waversomapstudio_races.inc" />
+    <None Include="version.txt" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95AF23C0-013B-9184-0A4C-14797656ED84}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>waversomapstudio</RootNamespace>
+    <ModName>waversomapstudio</ModName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(ProjectDir).build\bin\GTA-SA\Release\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\GTA-SA\Release\$(ProjectName)\</IntDir>
+    <TargetName>$(ModName)</TargetName>
+    <TargetExt>.asi</TargetExt>
+    <LocalDebuggerCommand>$(GTA_SA_DIR)\gta_sa.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(GTA_SA_DIR)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <ExternalIncludePath>$(IncludePath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(ProjectDir).build\bin\GTA-SA\Debug\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\GTA-SA\Debug\$(ProjectName)\</IntDir>
+    <TargetName>$(ModName)</TargetName>
+    <TargetExt>.asi</TargetExt>
+    <LocalDebuggerCommand>$(GTA_SA_DIR)\gta_sa.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(GTA_SA_DIR)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <ExternalIncludePath>$(IncludePath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>STUDIO_INFO_REQUIRE_GENERATED;_CRT_NON_CONFORMING_SWPRINTFS;TARGET_NAME=R"($(TargetName))";MOD_NAME=R"($(ModName))";GTASA;GTAGAME_NAME="San Andreas";GTAGAME_ABBR="SA";GTAGAME_ABBRLOW="sa";GTAGAME_PROTAGONISTNAME="CJ";GTAGAME_CITYNAME="San Andreas";_DX9_SDK_INSTALLED;PLUGIN_SGV_10US;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir).build\generated\$(Configuration);$(PLUGIN_SDK_DIR)\Plugin_SA;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa\rw;$(PLUGIN_SDK_DIR)\shared;$(PLUGIN_SDK_DIR)\shared\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/sdl- /std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalDependencies>plugin.lib;d3d9.lib;ole32.lib;windowscodecs.lib;winhttp.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PLUGIN_SDK_DIR)\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>.build\bin\GTA-SA\Release\$(ModName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+if defined GTA_SA_DIR ( 
+
+taskkill /IM gta_sa.exe /F /FI "STATUS eq RUNNING" 
+
+xcopy /Y "$(TargetPath)" "$(GTA_SA_DIR)\scripts" 
+
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;STUDIO_INFO_REQUIRE_GENERATED;_CRT_NON_CONFORMING_SWPRINTFS;TARGET_NAME=R"($(TargetName))";MOD_NAME=R"($(ModName))";GTASA;GTAGAME_NAME="San Andreas";GTAGAME_ABBR="SA";GTAGAME_ABBRLOW="sa";GTAGAME_PROTAGONISTNAME="CJ";GTAGAME_CITYNAME="San Andreas";_DX9_SDK_INSTALLED;PLUGIN_SGV_10US;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir).build\generated\$(Configuration);$(PLUGIN_SDK_DIR)\Plugin_SA;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa\rw;$(PLUGIN_SDK_DIR)\shared;$(PLUGIN_SDK_DIR)\shared\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/sdl- /std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>plugin_d.lib;d3d9.lib;ole32.lib;windowscodecs.lib;winhttp.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PLUGIN_SDK_DIR)\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>.build\bin\GTA-SA\Debug\$(ModName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+if defined GTA_SA_DIR ( 
+
+taskkill /IM gta_sa.exe /F /FI "STATUS eq RUNNING" 
+
+xcopy /Y "$(TargetPath)" "$(GTA_SA_DIR)\scripts" 
+
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup>
+    <StudioInfoVersionFile>$(ProjectDir)version.txt</StudioInfoVersionFile>
+    <StudioInfoVersionDirectory>$(ProjectDir).build\generated\$(Configuration)\</StudioInfoVersionDirectory>
+    <StudioInfoVersionHeader>$(StudioInfoVersionDirectory)studio_info_version.generated.h</StudioInfoVersionHeader>
+  </PropertyGroup>
+  <Target Name="GenerateStudioInfoVersion" BeforeTargets="ClCompile" Inputs="$(StudioInfoVersionFile);$(MSBuildProjectFullPath)" Outputs="$(StudioInfoVersionHeader)">
+    <ReadLinesFromFile File="$(StudioInfoVersionFile)">
+      <Output TaskParameter="Lines" ItemName="StudioInfoVersionLines" />
+    </ReadLinesFromFile>
+    <PropertyGroup>
+      <StudioInfoVersion>@(StudioInfoVersionLines)</StudioInfoVersion>
+    </PropertyGroup>
+    <Error Condition="'$(StudioInfoVersion)' == ''" Text="version.txt must contain a version on its first line." />
+    <Error Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(StudioInfoVersion)', '^[0-9]+[.][0-9]+([.][0-9]+)?$')) != 'True'" Text="version.txt must contain a numeric version with two or three components." />
+    <MakeDir Directories="$(StudioInfoVersionDirectory)" />
+    <ItemGroup>
+      <StudioInfoVersionHeaderLine Include="repository">
+        <Text>// Source Repository: https://github.com/waverso/waversomapstudio
+</Text>
+      </StudioInfoVersionHeaderLine>
+      <StudioInfoVersionHeaderLine Include="pragma">
+        <Text>#pragma once</Text>
+      </StudioInfoVersionHeaderLine>
+      <StudioInfoVersionHeaderLine Include="namespace">
+        <Text>namespace StudioInfo</Text>
+      </StudioInfoVersionHeaderLine>
+      <StudioInfoVersionHeaderLine Include="open">
+        <Text>{</Text>
+      </StudioInfoVersionHeaderLine>
+      <StudioInfoVersionHeaderLine Include="version">
+        <Text>    inline constexpr char Version[] = "$(StudioInfoVersion)";</Text>
+      </StudioInfoVersionHeaderLine>
+      <StudioInfoVersionHeaderLine Include="close">
+        <Text>}</Text>
+      </StudioInfoVersionHeaderLine>
+    </ItemGroup>
+    <WriteLinesToFile File="$(StudioInfoVersionHeader)" Lines="@(StudioInfoVersionHeaderLine->'%(Text)')" Overwrite="true" Encoding="ASCII" />
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
