@@ -42,7 +42,8 @@
 ## Installation
 1. [Download](../../releases/latest) the `.asi` file.
 2. Copy the `.asi` file to the game's root directory.
-3. Start the game and press **F4** to open the editor.
+3. Open the SA-MP or open.mp launcher and connect to a server, preferably a clean local test server.
+4. Press **F4** to open the editor.
 
 ## Recommended
 Optional, but recommended: install [SilentPatch](https://github.com/CookiePLMonster/SilentPatch/releases/latest/download/SilentPatchSA.zip) and [Windowed Mode](https://github.com/ThirteenAG/III.VC.SA.WindowedMode/releases/latest/download/III.VC.SA.WindowedMode.zip) in the game's root directory.
